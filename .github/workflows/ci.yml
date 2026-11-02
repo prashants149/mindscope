@@ -1,0 +1,62 @@
+name: MindScope CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  backend-tests:
+    name: Backend Test Suite & Safety Audits
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest-cov
+
+      - name: Run Pytest Suite with Coverage (>= 70%)
+        run: |
+          pytest tests/ --cov=src --cov-report=term-missing --cov-fail-under=70
+
+      - name: Run 32-Prompt Assistant Red-Teaming Battery
+        run: |
+          python scripts/test_assistant_30_prompts.py
+
+      - name: Run Algorithmic Fairness Subgroup Audit
+        run: |
+          python src/fairness/audit.py
+
+  frontend-build:
+    name: Frontend Next.js Production Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: web/package.json
+
+      - name: Install Frontend Dependencies
+        working-directory: web
+        run: npm ci || npm install
+
+      - name: Build Next.js Application
+        working-directory: web
+        run: npm run build

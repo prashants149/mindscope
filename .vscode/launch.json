@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MindScope: FastAPI Backend",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "src.api.app:app",
+        "--reload",
+        "--port",
+        "8000"
+      ],
+      "cwd": "${workspaceFolder}",
+      "jinja": true,
+      "justMyCode": true,
+      "env": {
+        "KMP_DUPLICATE_LIB_OK": "TRUE",
+        "NUMBA_CACHE_DIR": "${workspaceFolder}\\.numba_cache",
+        "KERAS_HOME": "${workspaceFolder}\\.keras"
+      }
+    },
+    {
+      "name": "MindScope: Pytest (All Tests)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests",
+        "-v"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "KMP_DUPLICATE_LIB_OK": "TRUE",
+        "NUMBA_CACHE_DIR": "${workspaceFolder}\\.numba_cache",
+        "KERAS_HOME": "${workspaceFolder}\\.keras"
+      }
+    }
+  ]
+}

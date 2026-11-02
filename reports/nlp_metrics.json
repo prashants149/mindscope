@@ -1,0 +1,418 @@
+{
+  "dataset_statistics": {
+    "total_documents": 100,
+    "train_samples": 75,
+    "test_samples": 25,
+    "num_classes": 6
+  },
+  "performance_metrics": {
+    "macro_f1": 0.33,
+    "weighted_f1": 0.3613,
+    "accuracy": 0.4,
+    "per_class_metrics": {
+      "anger": {
+        "precision": 0.1667,
+        "recall": 0.25,
+        "f1-score": 0.2,
+        "support": 4.0
+      },
+      "anxiety_fear": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1-score": 0.2857,
+        "support": 5.0
+      },
+      "joy_optimism": {
+        "precision": 0.5,
+        "recall": 0.8,
+        "f1-score": 0.6154,
+        "support": 5.0
+      },
+      "neutral": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "sadness": {
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1-score": 0.5455,
+        "support": 5.0
+      },
+      "stress_overwhelm": {
+        "precision": 0.3333,
+        "recall": 0.3333,
+        "f1-score": 0.3333,
+        "support": 3.0
+      },
+      "macro avg": {
+        "precision": 0.3333,
+        "recall": 0.3639,
+        "f1-score": 0.33,
+        "support": 25.0
+      },
+      "weighted avg": {
+        "precision": 0.3667,
+        "recall": 0.4,
+        "f1-score": 0.3613,
+        "support": 25.0
+      }
+    }
+  },
+  "error_analysis": {
+    "total_misclassifications": 15,
+    "misclassification_rate": 0.6,
+    "error_samples": [
+      {
+        "text": "Read two chapters of computer networks textbook and made flashcards for revision.",
+        "true_emotion": "neutral",
+        "predicted_emotion": "anger",
+        "theme": "Daily Routine",
+        "contains_idiom": false
+      },
+      {
+        "text": "I drank four cups of black coffee to pull an all-nighter for the compiler design lab exam.",
+        "true_emotion": "stress_overwhelm",
+        "predicted_emotion": "anger",
+        "theme": "Sleep & Exhaustion",
+        "contains_idiom": false
+      },
+      {
+        "text": "I am so proud of my team for winning second place in the 24-hour hackathon!",
+        "true_emotion": "joy_optimism",
+        "predicted_emotion": "anger",
+        "theme": "Positive Achievements",
+        "contains_idiom": false
+      },
+      {
+        "text": "I spent three hours waiting in line at the scholarship accounts office only to be told to come back Monday.",
+        "true_emotion": "anger",
+        "predicted_emotion": "anxiety_fear",
+        "theme": "Campus Infrastructure",
+        "contains_idiom": false
+      },
+      {
+        "text": "My roommate snores and plays games with the lights on until 3 AM. I am constantly sleep deprived.",
+        "true_emotion": "anger",
+        "predicted_emotion": "joy_optimism",
+        "theme": "Sleep & Exhaustion",
+        "contains_idiom": false
+      },
+      {
+        "text": "Packed my bags for the weekend trip home after completing the mid-semester evaluations.",
+        "true_emotion": "neutral",
+        "predicted_emotion": "stress_overwhelm",
+        "theme": "Daily Routine",
+        "contains_idiom": false
+      },
+      {
+        "text": "Got rejected after the final HR round of my dream company. It hurts so much after four rounds of coding.",
+        "true_emotion": "sadness",
+        "predicted_emotion": "joy_optimism",
+        "theme": "Career & Peer Comparison",
+        "contains_idiom": false
+      },
+      {
+        "text": "Reviewed the DBMS syllabus and downloaded previous years question papers from the portal.",
+        "true_emotion": "neutral",
+        "predicted_emotion": "anger",
+        "theme": "Daily Routine",
+        "contains_idiom": false
+      },
+      {
+        "text": "I have three back-to-back lab vivas tomorrow and haven't started preparing for the second one.",
+        "true_emotion": "anxiety_fear",
+        "predicted_emotion": "anger",
+        "theme": "Academic Pressure & Deadlines",
+        "contains_idiom": false
+      },
+      {
+        "text": "My parents compared my CGPA to my cousin who scored 9.8. I am so tired of this toxic comparison.",
+        "true_emotion": "anger",
+        "predicted_emotion": "stress_overwhelm",
+        "theme": "Family & Academic Pressure",
+        "contains_idiom": false
+      },
+      {
+        "text": "I couldn't sleep until 4 AM again last night because my mind kept racing about my CGPA.",
+        "true_emotion": "anxiety_fear",
+        "predicted_emotion": "sadness",
+        "theme": "Sleep & Exhaustion",
+        "contains_idiom": false
+      },
+      {
+        "text": "I keep procrastinating on my final year capstone project because the scope feels impossibly large.",
+        "true_emotion": "anxiety_fear",
+        "predicted_emotion": "sadness",
+        "theme": "Academic Pressure & Deadlines",
+        "contains_idiom": false
+      },
+      {
+        "text": "Woke up with an overwhelming sense of dread today. I couldn't bring myself to attend morning classes.",
+        "true_emotion": "sadness",
+        "predicted_emotion": "joy_optimism",
+        "theme": "Depressive Lethargy",
+        "contains_idiom": false
+      },
+      {
+        "text": "I'm dead tired after that 4-hour lab practical, need twelve hours of uninterrupted sleep.",
+        "true_emotion": "stress_overwhelm",
+        "predicted_emotion": "sadness",
+        "theme": "Sleep & Exhaustion",
+        "contains_idiom": true
+      },
+      {
+        "text": "I have panic attacks every Sunday evening thinking about facing the upcoming college week.",
+        "true_emotion": "anxiety_fear",
+        "predicted_emotion": "joy_optimism",
+        "theme": "Academic Pressure & Deadlines",
+        "contains_idiom": false
+      }
+    ],
+    "idiom_robustness_tests": [
+      {
+        "text": "I aced my compiler design viva today, absolutely killed it!",
+        "false_crisis_triggered": false,
+        "predicted_emotion": "joy_optimism",
+        "confidence": 0.3496
+      },
+      {
+        "text": "The professor murdered us with that calculus midterm proof.",
+        "false_crisis_triggered": false,
+        "predicted_emotion": "anger",
+        "confidence": 0.3052
+      },
+      {
+        "text": "I'm dead tired after that 4-hour lab practical.",
+        "false_crisis_triggered": false,
+        "predicted_emotion": "anger",
+        "confidence": 0.2416
+      }
+    ],
+    "qualitative_findings": [
+      "Primary confusion arises along the boundary between 'anxiety_fear' and 'stress_overwhelm' due to shared lexical cues (deadlines, pressure).",
+      "Idioms like 'killed that exam' successfully avoided triggering the crisis safeguard through regex exception handling.",
+      "Short reflective expressions without explicit emotion words occasionally bias toward the prior distribution."
+    ]
+  },
+  "discovered_themes": [
+    {
+      "topic_id": -1,
+      "label": "Miscellaneous / Outlier Reflections",
+      "document_count": 7,
+      "keywords": [
+        {
+          "word": "students",
+          "c_tf_idf": 0.2867
+        },
+        {
+          "word": "days",
+          "c_tf_idf": 0.1911
+        },
+        {
+          "word": "zero",
+          "c_tf_idf": 0.1206
+        },
+        {
+          "word": "pm",
+          "c_tf_idf": 0.1206
+        },
+        {
+          "word": "imposter",
+          "c_tf_idf": 0.1206
+        },
+        {
+          "word": "im terrified",
+          "c_tf_idf": 0.1206
+        }
+      ]
+    },
+    {
+      "topic_id": 0,
+      "label": "Theme 0: Feel & Semester & Like",
+      "document_count": 33,
+      "keywords": [
+        {
+          "word": "feel",
+          "c_tf_idf": 0.1698
+        },
+        {
+          "word": "semester",
+          "c_tf_idf": 0.1168
+        },
+        {
+          "word": "like",
+          "c_tf_idf": 0.1101
+        },
+        {
+          "word": "feel like",
+          "c_tf_idf": 0.0973
+        },
+        {
+          "word": "college",
+          "c_tf_idf": 0.0779
+        },
+        {
+          "word": "im",
+          "c_tf_idf": 0.0734
+        }
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "Theme 1: Today & Project & Just",
+      "document_count": 24,
+      "keywords": [
+        {
+          "word": "today",
+          "c_tf_idf": 0.1462
+        },
+        {
+          "word": "project",
+          "c_tf_idf": 0.0994
+        },
+        {
+          "word": "just",
+          "c_tf_idf": 0.0994
+        },
+        {
+          "word": "lab",
+          "c_tf_idf": 0.0877
+        },
+        {
+          "word": "coding",
+          "c_tf_idf": 0.086
+        },
+        {
+          "word": "lecture",
+          "c_tf_idf": 0.086
+        }
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "Theme 2: Notes & Upcoming & Group",
+      "document_count": 14,
+      "keywords": [
+        {
+          "word": "notes",
+          "c_tf_idf": 0.1171
+        },
+        {
+          "word": "upcoming",
+          "c_tf_idf": 0.1171
+        },
+        {
+          "word": "group",
+          "c_tf_idf": 0.1057
+        },
+        {
+          "word": "study",
+          "c_tf_idf": 0.1057
+        },
+        {
+          "word": "evening",
+          "c_tf_idf": 0.1057
+        },
+        {
+          "word": "project",
+          "c_tf_idf": 0.0902
+        }
+      ]
+    },
+    {
+      "topic_id": 3,
+      "label": "Theme 3: Lab & Hours & Exam",
+      "document_count": 10,
+      "keywords": [
+        {
+          "word": "lab",
+          "c_tf_idf": 0.2024
+        },
+        {
+          "word": "hours",
+          "c_tf_idf": 0.1719
+        },
+        {
+          "word": "exam",
+          "c_tf_idf": 0.1234
+        },
+        {
+          "word": "im",
+          "c_tf_idf": 0.1012
+        },
+        {
+          "word": "second",
+          "c_tf_idf": 0.0847
+        },
+        {
+          "word": "racing",
+          "c_tf_idf": 0.0847
+        }
+      ]
+    },
+    {
+      "topic_id": 4,
+      "label": "Theme 4: Fees & Stressed & Pm",
+      "document_count": 7,
+      "keywords": [
+        {
+          "word": "fees",
+          "c_tf_idf": 0.1844
+        },
+        {
+          "word": "stressed",
+          "c_tf_idf": 0.1844
+        },
+        {
+          "word": "pm",
+          "c_tf_idf": 0.1844
+        },
+        {
+          "word": "line",
+          "c_tf_idf": 0.1844
+        },
+        {
+          "word": "im stressed",
+          "c_tf_idf": 0.1844
+        },
+        {
+          "word": "time",
+          "c_tf_idf": 0.1619
+        }
+      ]
+    },
+    {
+      "topic_id": 5,
+      "label": "Theme 5: Preparing & Really & Lately",
+      "document_count": 5,
+      "keywords": [
+        {
+          "word": "preparing",
+          "c_tf_idf": 0.165
+        },
+        {
+          "word": "really",
+          "c_tf_idf": 0.165
+        },
+        {
+          "word": "lately",
+          "c_tf_idf": 0.165
+        },
+        {
+          "word": "month",
+          "c_tf_idf": 0.165
+        },
+        {
+          "word": "focus",
+          "c_tf_idf": 0.165
+        },
+        {
+          "word": "desk",
+          "c_tf_idf": 0.165
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "n_samples": 3000,
+  "random_seed": 42,
+  "ground_truth": {
+    "direct_effects": {
+      "sleep_hours -> depression_score": -1.5,
+      "screen_time_hours -> depression_score": 0.8,
+      "academic_pressure -> depression_score": 2.2,
+      "social_support -> depression_score": -1.8,
+      "financial_stress -> depression_score": 1.6,
+      "depression_score -> attendance_rate": -0.8,
+      "sleep_hours -> attendance_rate": 1.2,
+      "depression_score -> cgpa": -0.09,
+      "academic_pressure -> cgpa": -0.15
+    },
+    "total_effects": {
+      "sleep_hours -> attendance_rate": 2.4000000000000004,
+      "academic_pressure -> cgpa": -0.348,
+      "sleep_hours -> cgpa": 0.135
+    },
+    "raw_specification": {
+      "intercept_depression": 12.0,
+      "beta_sleep_on_dep": -1.5,
+      "beta_screen_on_dep": 0.8,
+      "beta_acad_on_dep": 2.2,
+      "beta_support_on_dep": -1.8,
+      "beta_fin_on_dep": 1.6,
+      "sigma_dep": 1.5,
+      "intercept_attendance": 92.0,
+      "beta_dep_on_att": -0.8,
+      "beta_sleep_on_att": 1.2,
+      "sigma_att": 3.0,
+      "intercept_cgpa": 8.8,
+      "beta_dep_on_cgpa": -0.09,
+      "beta_acad_on_cgpa": -0.15,
+      "sigma_cgpa": 0.4,
+      "intercept_anxiety": 8.0,
+      "beta_acad_on_anx": 1.9,
+      "beta_screen_on_anx": 0.6,
+      "beta_sleep_on_anx": -1.1,
+      "beta_fin_on_anx": 1.2,
+      "sigma_anx": 1.4
+    }
+  },
+  "summary": {
+    "depression_prevalence": 0.498,
+    "anxiety_prevalence": 0.16233333333333333,
+    "mean_attendance": 92.25316666666667,
+    "mean_cgpa": 8.853639999999999,
+    "mean_sleep_hours": 7.4402333333333335,
+    "mean_screen_time": 5.366633333333333
+  }
+}

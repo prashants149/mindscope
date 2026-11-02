@@ -1,0 +1,428 @@
+{
+  "global_importance_ranking": [
+    {
+      "feature": "academic_pressure",
+      "display_name": "Academic Pressure (1-5)",
+      "mean_abs_shap": 1.8635
+    },
+    {
+      "feature": "financial_stress",
+      "display_name": "Financial Burden (1-5)",
+      "mean_abs_shap": 1.7905
+    },
+    {
+      "feature": "social_support",
+      "display_name": "Social Support Network (1-5)",
+      "mean_abs_shap": 1.753
+    },
+    {
+      "feature": "sleep_hours",
+      "display_name": "Sleep Duration (hrs/night)",
+      "mean_abs_shap": 1.0734
+    },
+    {
+      "feature": "screen_time_hours",
+      "display_name": "Screen Time (hrs/day)",
+      "mean_abs_shap": 0.9948
+    },
+    {
+      "feature": "study_year",
+      "display_name": "Undergraduate Year",
+      "mean_abs_shap": 0.1261
+    },
+    {
+      "feature": "gender_Male",
+      "display_name": "Gender: Male",
+      "mean_abs_shap": 0.0908
+    },
+    {
+      "feature": "age",
+      "display_name": "Age",
+      "mean_abs_shap": 0.0544
+    },
+    {
+      "feature": "physical_activity_hours",
+      "display_name": "Physical Activity (hrs/week)",
+      "mean_abs_shap": 0.0509
+    },
+    {
+      "feature": "gender_Non-Binary",
+      "display_name": "Gender: Non-Binary",
+      "mean_abs_shap": 0.0136
+    }
+  ],
+  "case_studies": {
+    "high_risk": {
+      "predicted_risk_probability": 1.0,
+      "risk_tier": "Elevated Risk Indicator",
+      "base_value": 0.3017,
+      "top_risk_escalators": [
+        {
+          "feature": "academic_pressure",
+          "display_name": "Academic Pressure (1-5)",
+          "feature_value": 2.81,
+          "shap_value": 6.1703,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "sleep_hours",
+          "display_name": "Sleep Duration (hrs/night)",
+          "feature_value": -3.37,
+          "shap_value": 4.3207,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "social_support",
+          "display_name": "Social Support Network (1-5)",
+          "feature_value": -1.71,
+          "shap_value": 4.0034,
+          "direction": "Risk Escalator"
+        }
+      ],
+      "top_protective_factors": [
+        {
+          "feature": "study_year",
+          "display_name": "Undergraduate Year",
+          "feature_value": 0.43,
+          "shap_value": -0.0579,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "age",
+          "display_name": "Age",
+          "feature_value": 0.29,
+          "shap_value": -0.014,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "gender_Non-Binary",
+          "display_name": "Gender: Non-Binary",
+          "feature_value": 0.0,
+          "shap_value": -0.0083,
+          "direction": "Protective Factor"
+        }
+      ],
+      "all_feature_contributions": [
+        {
+          "feature": "academic_pressure",
+          "display_name": "Academic Pressure (1-5)",
+          "feature_value": 2.81,
+          "shap_value": 6.1703,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "sleep_hours",
+          "display_name": "Sleep Duration (hrs/night)",
+          "feature_value": -3.37,
+          "shap_value": 4.3207,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "social_support",
+          "display_name": "Social Support Network (1-5)",
+          "feature_value": -1.71,
+          "shap_value": 4.0034,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "financial_stress",
+          "display_name": "Financial Burden (1-5)",
+          "feature_value": 1.79,
+          "shap_value": 3.8586,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "screen_time_hours",
+          "display_name": "Screen Time (hrs/day)",
+          "feature_value": 2.38,
+          "shap_value": 2.794,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "gender_Male",
+          "display_name": "Gender: Male",
+          "feature_value": 0.0,
+          "shap_value": 0.0891,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "study_year",
+          "display_name": "Undergraduate Year",
+          "feature_value": 0.43,
+          "shap_value": -0.0579,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "physical_activity_hours",
+          "display_name": "Physical Activity (hrs/week)",
+          "feature_value": -0.69,
+          "shap_value": 0.0433,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "age",
+          "display_name": "Age",
+          "feature_value": 0.29,
+          "shap_value": -0.014,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "gender_Non-Binary",
+          "display_name": "Gender: Non-Binary",
+          "feature_value": 0.0,
+          "shap_value": -0.0083,
+          "direction": "Protective Factor"
+        }
+      ],
+      "plain_english_summary": "The model estimates a 100.0% risk score (Elevated Risk Indicator). The primary factors statistically associated with increased risk for this profile are: Academic Pressure (1-5) (+6.17), Sleep Duration (hrs/night) (+4.32), Social Support Network (1-5) (+4.00). The primary factors buffering or reducing predicted risk are: Undergraduate Year (-0.06), Age (-0.01), Gender: Non-Binary (-0.01).",
+      "epistemic_guardrail": "CAUSAL WARNING: These SHAP values quantify predictive association and model attribution only. Statistical associations are NOT causal mechanisms. A high feature attribution does not imply that modifying this variable will causally reduce depression risk. To estimate true intervention impacts, refer to MindScope's Structural Causal Inference Engine.",
+      "medical_disclaimer": "MindScope is strictly an academic research and decision-support prototype. It is NOT a medical or clinical diagnostic instrument and does NOT provide medical diagnoses, clinical prognosis, or treatment recommendations. Never use this tool to replace professional psychological or psychiatric consultation. If you or someone you know is in crisis or distress, please immediately contact Tele-MANAS (14416 or 1800-891-4416) or call 112."
+    },
+    "resilient": {
+      "predicted_risk_probability": 0.0,
+      "risk_tier": "Low Risk Indicator",
+      "base_value": 0.3017,
+      "top_risk_escalators": [
+        {
+          "feature": "study_year",
+          "display_name": "Undergraduate Year",
+          "feature_value": -1.39,
+          "shap_value": 0.1994,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "age",
+          "display_name": "Age",
+          "feature_value": -0.34,
+          "shap_value": 0.0255,
+          "direction": "Risk Escalator"
+        }
+      ],
+      "top_protective_factors": [
+        {
+          "feature": "social_support",
+          "display_name": "Social Support Network (1-5)",
+          "feature_value": 1.83,
+          "shap_value": -4.0436,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "academic_pressure",
+          "display_name": "Academic Pressure (1-5)",
+          "feature_value": -1.64,
+          "shap_value": -3.8627,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "financial_stress",
+          "display_name": "Financial Burden (1-5)",
+          "feature_value": -1.56,
+          "shap_value": -3.3876,
+          "direction": "Protective Factor"
+        }
+      ],
+      "all_feature_contributions": [
+        {
+          "feature": "social_support",
+          "display_name": "Social Support Network (1-5)",
+          "feature_value": 1.83,
+          "shap_value": -4.0436,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "academic_pressure",
+          "display_name": "Academic Pressure (1-5)",
+          "feature_value": -1.64,
+          "shap_value": -3.8627,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "financial_stress",
+          "display_name": "Financial Burden (1-5)",
+          "feature_value": -1.56,
+          "shap_value": -3.3876,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "screen_time_hours",
+          "display_name": "Screen Time (hrs/day)",
+          "feature_value": -1.79,
+          "shap_value": -2.1647,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "sleep_hours",
+          "display_name": "Sleep Duration (hrs/night)",
+          "feature_value": 1.21,
+          "shap_value": -1.8036,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "study_year",
+          "display_name": "Undergraduate Year",
+          "feature_value": -1.39,
+          "shap_value": 0.1994,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "gender_Male",
+          "display_name": "Gender: Male",
+          "feature_value": 1.0,
+          "shap_value": -0.0928,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "physical_activity_hours",
+          "display_name": "Physical Activity (hrs/week)",
+          "feature_value": 1.03,
+          "shap_value": -0.0723,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "age",
+          "display_name": "Age",
+          "feature_value": -0.34,
+          "shap_value": 0.0255,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "gender_Non-Binary",
+          "display_name": "Gender: Non-Binary",
+          "feature_value": 0.0,
+          "shap_value": -0.0083,
+          "direction": "Protective Factor"
+        }
+      ],
+      "plain_english_summary": "The model estimates a 0.0% risk score (Low Risk Indicator). The primary factors statistically associated with increased risk for this profile are: Undergraduate Year (+0.20), Age (+0.03). The primary factors buffering or reducing predicted risk are: Social Support Network (1-5) (-4.04), Academic Pressure (1-5) (-3.86), Financial Burden (1-5) (-3.39).",
+      "epistemic_guardrail": "CAUSAL WARNING: These SHAP values quantify predictive association and model attribution only. Statistical associations are NOT causal mechanisms. A high feature attribution does not imply that modifying this variable will causally reduce depression risk. To estimate true intervention impacts, refer to MindScope's Structural Causal Inference Engine.",
+      "medical_disclaimer": "MindScope is strictly an academic research and decision-support prototype. It is NOT a medical or clinical diagnostic instrument and does NOT provide medical diagnoses, clinical prognosis, or treatment recommendations. Never use this tool to replace professional psychological or psychiatric consultation. If you or someone you know is in crisis or distress, please immediately contact Tele-MANAS (14416 or 1800-891-4416) or call 112."
+    },
+    "moderate": {
+      "predicted_risk_probability": 0.9735,
+      "risk_tier": "Elevated Risk Indicator",
+      "base_value": 0.3017,
+      "top_risk_escalators": [
+        {
+          "feature": "sleep_hours",
+          "display_name": "Sleep Duration (hrs/night)",
+          "feature_value": -1.08,
+          "shap_value": 1.2586,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "academic_pressure",
+          "display_name": "Academic Pressure (1-5)",
+          "feature_value": 0.59,
+          "shap_value": 1.1538,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "screen_time_hours",
+          "display_name": "Screen Time (hrs/day)",
+          "feature_value": 0.48,
+          "shap_value": 0.54,
+          "direction": "Risk Escalator"
+        }
+      ],
+      "top_protective_factors": [
+        {
+          "feature": "social_support",
+          "display_name": "Social Support Network (1-5)",
+          "feature_value": 0.06,
+          "shap_value": -0.0201,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "physical_activity_hours",
+          "display_name": "Physical Activity (hrs/week)",
+          "feature_value": -0.0,
+          "shap_value": -0.0029,
+          "direction": "Protective Factor"
+        }
+      ],
+      "all_feature_contributions": [
+        {
+          "feature": "sleep_hours",
+          "display_name": "Sleep Duration (hrs/night)",
+          "feature_value": -1.08,
+          "shap_value": 1.2586,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "academic_pressure",
+          "display_name": "Academic Pressure (1-5)",
+          "feature_value": 0.59,
+          "shap_value": 1.1538,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "screen_time_hours",
+          "display_name": "Screen Time (hrs/day)",
+          "feature_value": 0.48,
+          "shap_value": 0.54,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "financial_stress",
+          "display_name": "Financial Burden (1-5)",
+          "feature_value": 0.11,
+          "shap_value": 0.2355,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "gender_Non-Binary",
+          "display_name": "Gender: Non-Binary",
+          "feature_value": 1.0,
+          "shap_value": 0.157,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "gender_Male",
+          "display_name": "Gender: Male",
+          "feature_value": 0.0,
+          "shap_value": 0.0891,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "study_year",
+          "display_name": "Undergraduate Year",
+          "feature_value": -0.48,
+          "shap_value": 0.0708,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "social_support",
+          "display_name": "Social Support Network (1-5)",
+          "feature_value": 0.06,
+          "shap_value": -0.0201,
+          "direction": "Protective Factor"
+        },
+        {
+          "feature": "age",
+          "display_name": "Age",
+          "feature_value": -0.02,
+          "shap_value": 0.0057,
+          "direction": "Risk Escalator"
+        },
+        {
+          "feature": "physical_activity_hours",
+          "display_name": "Physical Activity (hrs/week)",
+          "feature_value": -0.0,
+          "shap_value": -0.0029,
+          "direction": "Protective Factor"
+        }
+      ],
+      "plain_english_summary": "The model estimates a 97.3% risk score (Elevated Risk Indicator). The primary factors statistically associated with increased risk for this profile are: Sleep Duration (hrs/night) (+1.26), Academic Pressure (1-5) (+1.15), Screen Time (hrs/day) (+0.54). The primary factors buffering or reducing predicted risk are: Social Support Network (1-5) (-0.02), Physical Activity (hrs/week) (-0.00).",
+      "epistemic_guardrail": "CAUSAL WARNING: These SHAP values quantify predictive association and model attribution only. Statistical associations are NOT causal mechanisms. A high feature attribution does not imply that modifying this variable will causally reduce depression risk. To estimate true intervention impacts, refer to MindScope's Structural Causal Inference Engine.",
+      "medical_disclaimer": "MindScope is strictly an academic research and decision-support prototype. It is NOT a medical or clinical diagnostic instrument and does NOT provide medical diagnoses, clinical prognosis, or treatment recommendations. Never use this tool to replace professional psychological or psychiatric consultation. If you or someone you know is in crisis or distress, please immediately contact Tele-MANAS (14416 or 1800-891-4416) or call 112."
+    }
+  },
+  "figures_generated": [
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_summary_beeswarm.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_feature_importance_bar.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_dependence_academic_pressure.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_dependence_sleep_hours.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_local_waterfall_high_risk.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_local_waterfall_low_risk.png"
+  ]
+}

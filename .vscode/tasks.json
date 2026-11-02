@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MindScope: Run FastAPI Backend",
+      "type": "shell",
+      "command": "C:\\anoconda\\python.exe -m uvicorn src.api.app:app --reload --port 8000",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "KMP_DUPLICATE_LIB_OK": "TRUE",
+          "NUMBA_CACHE_DIR": "${workspaceFolder}\\.numba_cache",
+          "KERAS_HOME": "${workspaceFolder}\\.keras"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "mindscope"
+      }
+    },
+    {
+      "label": "MindScope: Run Next.js Frontend",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}\\web"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "mindscope"
+      }
+    },
+    {
+      "label": "MindScope: Run Full Stack (Both Backend & Frontend)",
+      "dependsOn": [
+        "MindScope: Run FastAPI Backend",
+        "MindScope: Run Next.js Frontend"
+      ],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    }
+  ]
+}

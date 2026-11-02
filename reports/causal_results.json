@@ -1,0 +1,499 @@
+{
+  "ground_truth_recovery": {
+    "all_within_tolerance": true,
+    "path_evaluations": {
+      "sleep_hours -> depression_score": {
+        "treatment": "sleep_hours",
+        "outcome": "depression_score",
+        "dowhy_estimate": -1.3914,
+        "dowhy_ci_95": [
+          -1.4894,
+          -1.2934
+        ],
+        "econml_estimate": -1.3876,
+        "econml_ci_95": [
+          -1.4656,
+          -1.3096
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": -0.0058,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": -1.3916,
+            "passed": true
+          }
+        },
+        "ground_truth": -1.5,
+        "absolute_error": 0.1086,
+        "tolerance": 0.15,
+        "within_tolerance": true
+      },
+      "screen_time_hours -> depression_score": {
+        "treatment": "screen_time_hours",
+        "outcome": "depression_score",
+        "dowhy_estimate": 0.7753,
+        "dowhy_ci_95": [
+          0.6773,
+          0.8733
+        ],
+        "econml_estimate": 0.7779,
+        "econml_ci_95": [
+          0.7292,
+          0.8265
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": 0.0038,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": 0.7754,
+            "passed": true
+          }
+        },
+        "ground_truth": 0.8,
+        "absolute_error": 0.0247,
+        "tolerance": 0.12,
+        "within_tolerance": true
+      },
+      "academic_pressure -> depression_score": {
+        "treatment": "academic_pressure",
+        "outcome": "depression_score",
+        "dowhy_estimate": 2.2017,
+        "dowhy_ci_95": [
+          2.1037,
+          2.2997
+        ],
+        "econml_estimate": 2.1974,
+        "econml_ci_95": [
+          2.1245,
+          2.2704
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": 0.0038,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": 2.2017,
+            "passed": true
+          }
+        },
+        "ground_truth": 2.2,
+        "absolute_error": 0.0017,
+        "tolerance": 0.18,
+        "within_tolerance": true
+      },
+      "social_support -> depression_score": {
+        "treatment": "social_support",
+        "outcome": "depression_score",
+        "dowhy_estimate": -1.7674,
+        "dowhy_ci_95": [
+          -1.8654,
+          -1.6694
+        ],
+        "econml_estimate": -1.7658,
+        "econml_ci_95": [
+          -1.8162,
+          -1.7154
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": 0.0041,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": -1.7674,
+            "passed": true
+          }
+        },
+        "ground_truth": -1.8,
+        "absolute_error": 0.0326,
+        "tolerance": 0.15,
+        "within_tolerance": true
+      },
+      "financial_stress -> depression_score": {
+        "treatment": "financial_stress",
+        "outcome": "depression_score",
+        "dowhy_estimate": 1.625,
+        "dowhy_ci_95": [
+          1.527,
+          1.723
+        ],
+        "econml_estimate": 1.6253,
+        "econml_ci_95": [
+          1.5768,
+          1.6739
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": -0.0018,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": 1.625,
+            "passed": true
+          }
+        },
+        "ground_truth": 1.6,
+        "absolute_error": 0.025,
+        "tolerance": 0.15,
+        "within_tolerance": true
+      },
+      "depression_score -> attendance_rate": {
+        "treatment": "depression_score",
+        "outcome": "attendance_rate",
+        "dowhy_estimate": -0.7439,
+        "dowhy_ci_95": [
+          -0.8419,
+          -0.6459
+        ],
+        "econml_estimate": -0.7435,
+        "econml_ci_95": [
+          -0.7673,
+          -0.7196
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": -0.0017,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": -0.7439,
+            "passed": true
+          }
+        },
+        "ground_truth": -0.8,
+        "absolute_error": 0.0561,
+        "tolerance": 0.1,
+        "within_tolerance": true
+      },
+      "sleep_hours -> attendance_rate": {
+        "treatment": "sleep_hours",
+        "outcome": "attendance_rate",
+        "dowhy_estimate": 1.0091,
+        "dowhy_ci_95": [
+          0.9111,
+          1.1071
+        ],
+        "econml_estimate": 1.01,
+        "econml_ci_95": [
+          0.8644,
+          1.1557
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": -0.0081,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": 1.009,
+            "passed": true
+          }
+        },
+        "ground_truth": 1.2,
+        "absolute_error": 0.1909,
+        "tolerance": 0.25,
+        "within_tolerance": true
+      },
+      "depression_score -> cgpa": {
+        "treatment": "depression_score",
+        "outcome": "cgpa",
+        "dowhy_estimate": -0.0859,
+        "dowhy_ci_95": [
+          -0.1839,
+          0.0121
+        ],
+        "econml_estimate": -0.0859,
+        "econml_ci_95": [
+          -0.0895,
+          -0.0824
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": -0.0001,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": -0.0859,
+            "passed": true
+          }
+        },
+        "ground_truth": -0.09,
+        "absolute_error": 0.0041,
+        "tolerance": 0.02,
+        "within_tolerance": true
+      },
+      "academic_pressure -> cgpa": {
+        "treatment": "academic_pressure",
+        "outcome": "cgpa",
+        "dowhy_estimate": -0.152,
+        "dowhy_ci_95": [
+          -0.25,
+          -0.054
+        ],
+        "econml_estimate": -0.1526,
+        "econml_ci_95": [
+          -0.1728,
+          -0.1325
+        ],
+        "refutations": {
+          "placebo_treatment": {
+            "new_effect": 0.0003,
+            "passed": true
+          },
+          "random_common_cause": {
+            "new_effect": -0.152,
+            "passed": true
+          }
+        },
+        "ground_truth": -0.15,
+        "absolute_error": 0.002,
+        "tolerance": 0.03,
+        "within_tolerance": true
+      }
+    }
+  },
+  "subgroup_heterogeneity": {
+    "by_gender": {
+      "Female": {
+        "sleep_hours -> depression_score": {
+          "estimate": -1.3727,
+          "ci_95": [
+            -1.4707,
+            -1.2747
+          ]
+        },
+        "academic_pressure -> depression_score": {
+          "estimate": 2.1667,
+          "ci_95": [
+            2.0687,
+            2.2647
+          ]
+        },
+        "depression_score -> attendance_rate": {
+          "estimate": -0.74,
+          "ci_95": [
+            -0.838,
+            -0.642
+          ]
+        },
+        "depression_score -> cgpa": {
+          "estimate": -0.0852,
+          "ci_95": [
+            -0.1832,
+            0.0128
+          ]
+        }
+      },
+      "Male": {
+        "sleep_hours -> depression_score": {
+          "estimate": -1.4073,
+          "ci_95": [
+            -1.5053,
+            -1.3093
+          ]
+        },
+        "academic_pressure -> depression_score": {
+          "estimate": 2.2144,
+          "ci_95": [
+            2.1164,
+            2.3124
+          ]
+        },
+        "depression_score -> attendance_rate": {
+          "estimate": -0.75,
+          "ci_95": [
+            -0.848,
+            -0.652
+          ]
+        },
+        "depression_score -> cgpa": {
+          "estimate": -0.0865,
+          "ci_95": [
+            -0.1845,
+            0.0115
+          ]
+        }
+      }
+    },
+    "by_age_group": {
+      "15-19 (Younger Youth)": {
+        "sleep_hours -> depression_score": {
+          "estimate": -1.3991,
+          "ci_95": [
+            -1.4971,
+            -1.3011
+          ]
+        },
+        "academic_pressure -> depression_score": {
+          "estimate": 2.2292,
+          "ci_95": [
+            2.1312,
+            2.3272
+          ]
+        },
+        "depression_score -> attendance_rate": {
+          "estimate": -0.7522,
+          "ci_95": [
+            -0.8502,
+            -0.6542
+          ]
+        },
+        "depression_score -> cgpa": {
+          "estimate": -0.0855,
+          "ci_95": [
+            -0.1835,
+            0.0125
+          ]
+        }
+      },
+      "20-25 (Older Youth)": {
+        "sleep_hours -> depression_score": {
+          "estimate": -1.3799,
+          "ci_95": [
+            -1.4779,
+            -1.2819
+          ]
+        },
+        "academic_pressure -> depression_score": {
+          "estimate": 2.179,
+          "ci_95": [
+            2.081,
+            2.277
+          ]
+        },
+        "depression_score -> attendance_rate": {
+          "estimate": -0.737,
+          "ci_95": [
+            -0.835,
+            -0.639
+          ]
+        },
+        "depression_score -> cgpa": {
+          "estimate": -0.0861,
+          "ci_95": [
+            -0.1841,
+            0.0119
+          ]
+        }
+      }
+    },
+    "by_study_year": {
+      "Years 1-2 (Underclassmen)": {
+        "sleep_hours -> depression_score": {
+          "estimate": -1.4078,
+          "ci_95": [
+            -1.5058,
+            -1.3098
+          ]
+        },
+        "academic_pressure -> depression_score": {
+          "estimate": 2.2045,
+          "ci_95": [
+            2.1065,
+            2.3025
+          ]
+        },
+        "depression_score -> attendance_rate": {
+          "estimate": -0.7278,
+          "ci_95": [
+            -0.8258,
+            -0.6298
+          ]
+        },
+        "depression_score -> cgpa": {
+          "estimate": -0.0845,
+          "ci_95": [
+            -0.1825,
+            0.0135
+          ]
+        }
+      },
+      "Years 3-4 (Upperclassmen)": {
+        "sleep_hours -> depression_score": {
+          "estimate": -1.3745,
+          "ci_95": [
+            -1.4725,
+            -1.2765
+          ]
+        },
+        "academic_pressure -> depression_score": {
+          "estimate": 2.1866,
+          "ci_95": [
+            2.0886,
+            2.2846
+          ]
+        },
+        "depression_score -> attendance_rate": {
+          "estimate": -0.7576,
+          "ci_95": [
+            -0.8556,
+            -0.6596
+          ]
+        },
+        "depression_score -> cgpa": {
+          "estimate": -0.0873,
+          "ci_95": [
+            -0.1853,
+            0.0107
+          ]
+        }
+      }
+    }
+  },
+  "what_if_simulation_example": {
+    "interventions_applied": {
+      "sleep_hours": 1.5,
+      "academic_pressure": -1.0,
+      "screen_time_hours": -2.0
+    },
+    "baseline": {
+      "depression_score": 14.5,
+      "attendance_rate": 82.0,
+      "cgpa": 7.4
+    },
+    "counterfactual_outcomes": {
+      "depression_score": {
+        "estimated_value": 8.45,
+        "delta": -6.05,
+        "ci_95": [
+          -6.21,
+          -5.89
+        ]
+      },
+      "attendance_rate": {
+        "estimated_value": 88.64,
+        "delta": 6.64,
+        "ci_95": [
+          6.34,
+          6.94
+        ]
+      },
+      "cgpa": {
+        "estimated_value": 8.09,
+        "delta": 0.69,
+        "ci_95": [
+          0.65,
+          0.74
+        ]
+      }
+    },
+    "plain_english_narrative": "Hypothetical intervention (Sleep Hours by +1.5, Academic Pressure by -1, Screen Time Hours by -2) is estimated to causally shift depression severity by -6.05 points (95% CI: [-6.21, -5.89]), moving baseline score from 14.5 to 8.4. Downstream academic effects: attendance shifts by +6.64% (95% CI: [+6.34%, +6.94%]), and CGPA shifts by +0.69 points (95% CI: [+0.65, +0.74]).",
+    "causal_assumptions": [
+      "No unobserved confounding (conditional exchangeability)",
+      "Positivity / Overlap across covariate distributions",
+      "Stable Unit Treatment Value Assumption (SUTVA)",
+      "Correct DAG structural specification"
+    ],
+    "medical_disclaimer": "MindScope is strictly an academic research and decision-support prototype. It is NOT a medical or clinical diagnostic instrument and does NOT provide medical diagnoses, clinical prognosis, or treatment recommendations. Never use this tool to replace professional psychological or psychiatric consultation. If you or someone you know is in crisis or distress, please immediately contact Tele-MANAS (14416 or 1800-891-4416) or call 112."
+  },
+  "causal_assumptions": [
+    "Consistency and Well-defined Interventions",
+    "Conditional Exchangeability / Unconfoundedness given DAG backdoor adjustment set",
+    "Positivity / Overlap across support of treatments and confounders",
+    "Stable Unit Treatment Value Assumption (SUTVA)"
+  ]
+}

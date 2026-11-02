@@ -1,0 +1,101 @@
+text,emotion,theme,contains_idiom
+"Finals week is approaching and I have three project submissions due on Friday. I can feel my heart pounding every time I open my laptop.",anxiety_fear,Academic Pressure & Deadlines,False
+"I couldn't sleep until 4 AM again last night because my mind kept racing about my CGPA.",anxiety_fear,Sleep & Exhaustion,False
+"I feel like no matter how hard I study for Data Structures, my grades never reflect the hours I put in.",sadness,Academic Pressure & Deadlines,False
+"All my friends got internship offers at top companies and I haven't even received an interview call. I feel completely left behind.",sadness,Career & Peer Comparison,False
+"Why do professors schedule surprise quizzes right after midterm week? It makes zero sense and everyone is furious.",anger,Academic Pressure & Deadlines,False
+"I'm juggling two part-time tutoring jobs to pay for college fees while managing six lab courses. I am completely overwhelmed and burnt out.",stress_overwhelm,Financial & Academic Burden,False
+"My group project partners haven't contributed a single line of code and the submission deadline is tomorrow morning.",anger,Academic Pressure & Deadlines,False
+"I just got accepted for a research conference presentation! All the weekend coding sessions finally paid off.",joy_optimism,Positive Achievements,False
+"Today was a productive day. Finished the machine learning assignment and went for a run in the evening.",joy_optimism,Wellness & Balance,False
+"Just another regular Tuesday attending operating systems lectures and taking notes.",neutral,Daily Routine,False
+"The campus library closes at 8 PM during exam week which is honestly so inconvenient.",anger,Campus Infrastructure,False
+"I feel lonely in the hostel. Everyone is either studying in their rooms or already in close-knit friend groups.",sadness,Social Isolation,False
+"I have to send my tuition fee invoice tomorrow and I'm stressed about whether the bank education loan will clear in time.",anxiety_fear,Financial & Academic Burden,False
+"I aced the compiler design viva today, absolutely killed it!",joy_optimism,Positive Achievements,True
+"These semester exam papers were brutal, the calculus professor really murdered us with that proof.",anger,Academic Pressure & Deadlines,True
+"I'm dead tired after that 4-hour lab practical, need twelve hours of uninterrupted sleep.",stress_overwhelm,Sleep & Exhaustion,True
+"I feel so empty inside. Sitting in class and looking around, I feel completely disconnected from everything.",sadness,Social Isolation,False
+"Can't stop worrying about campus placements next semester. What if I graduate without a job offer?",anxiety_fear,Career & Peer Comparison,False
+"My parents expect a 9+ CGPA every semester and the constant pressure is suffocating.",stress_overwhelm,Family & Academic Pressure,False
+"Spent the afternoon hanging out with college friends at the canteen, felt so refreshing.",joy_optimism,Social Support & Leisure,False
+"Submitted the software engineering assignment just two minutes before the midnight deadline. My hands were shaking.",anxiety_fear,Academic Pressure & Deadlines,False
+"Living on instant noodles because money is tight until the end of the month.",stress_overwhelm,Financial & Academic Burden,False
+"I am so proud of my team for winning second place in the 24-hour hackathon!",joy_optimism,Positive Achievements,False
+"I feel so hopeless about my academic trajectory. I failed two core modules and don't know how to recover.",sadness,Academic Pressure & Deadlines,False
+"The WiFi in the student dormitory hasn't worked for three days straight. How are we supposed to submit assignments?",anger,Campus Infrastructure,False
+"Read two chapters of computer networks textbook and made flashcards for revision.",neutral,Daily Routine,False
+"I keep procrastinating on my final year capstone project because the scope feels impossibly large.",anxiety_fear,Academic Pressure & Deadlines,False
+"Woke up with an overwhelming sense of dread today. I couldn't bring myself to attend morning classes.",sadness,Depressive Lethargy,False
+"My mentor gave me fantastic feedback on my deep learning thesis proposal today!",joy_optimism,Positive Achievements,False
+"I haven't eaten a proper meal in two days because I've been glued to my desk preparing for competitive coding rounds.",stress_overwhelm,Sleep & Exhaustion,False
+"Every time someone on LinkedIn posts their Google internship offer I feel a wave of panic.",anxiety_fear,Career & Peer Comparison,False
+"Nobody in my class talks to me unless they need my lab assignment code to copy.",sadness,Social Isolation,False
+"Had a calm morning coffee and revised my notes for the upcoming presentation.",neutral,Daily Routine,False
+"I'm terrified of public speaking and tomorrow I have to present my seminar to eighty students and faculty.",anxiety_fear,Academic Pressure & Deadlines,False
+"Finally understood Dijkstra's algorithm after struggling with it all week. Such a satisfying feeling!",joy_optimism,Positive Achievements,False
+"College feels like an endless conveyor belt of quizzes, midterms, labs, and end-sems with no room to breathe.",stress_overwhelm,Academic Pressure & Deadlines,False
+"My scholarship was delayed and now the admin department is charging late registration fees. This is ridiculous.",anger,Financial & Academic Burden,False
+"I just want to crawl into bed and sleep for a week. Everything takes so much energy.",sadness,Depressive Lethargy,False
+"Working out at the university gymnasium every morning has really improved my focus and stamina.",joy_optimism,Wellness & Balance,False
+"The attendance policy requiring 75% mandatory presence even when sick is completely unfair.",anger,Campus Policy,False
+"Reviewed the DBMS syllabus and downloaded previous years question papers from the portal.",neutral,Daily Routine,False
+"I don't know who I am anymore outside of being an engineering student chasing numbers.",sadness,Identity & Purpose,False
+"Got rejected after the final HR round of my dream company. It hurts so much after four rounds of coding.",sadness,Career & Peer Comparison,False
+"My roommate snores and plays games with the lights on until 3 AM. I am constantly sleep deprived.",anger,Sleep & Exhaustion,False
+"We built a working prototype for our IoT project and the sensors are calibrating smoothly!",joy_optimism,Positive Achievements,False
+"I keep checking my email every five minutes waiting for the scholarship decision notification.",anxiety_fear,Financial & Academic Burden,False
+"Feeling completely burned out. I have zero motivation left to finish this semester.",stress_overwhelm,Depressive Lethargy,False
+"Had a wholesome phone call with my mom today, she reminded me that my grades don't define my worth.",joy_optimism,Social Support & Leisure,False
+"The lab assistant deducted marks from my submission because I used Python 3.11 instead of 3.8.",anger,Academic Pressure & Deadlines,False
+"Attended the guest lecture on distributed systems. It was informative and well-structured.",neutral,Daily Routine,False
+"I feel like an imposter in my AI class. Everyone else seems to understand backpropagation intuitively.",anxiety_fear,Career & Peer Comparison,False
+"I spent the entire weekend crying in my room because I feel like a disappointment to my family.",sadness,Family & Academic Pressure,False
+"I'm so exhausted that I fell asleep during the afternoon signal processing lecture.",stress_overwhelm,Sleep & Exhaustion,False
+"Celebrated my birthday with my hostel mates tonight. They surprised me with a cake at midnight!",joy_optimism,Social Support & Leisure,False
+"Can't concentrate on my books for more than ten minutes. My brain feels foggy and sluggish.",sadness,Depressive Lethargy,False
+"I have no financial safety net. If I don't get placed this semester, I don't know how I will repay my family debts.",anxiety_fear,Financial & Academic Burden,False
+"The university mess food has been terrible lately and giving several students stomach issues.",anger,Campus Infrastructure,False
+"Organized my study desk and planned out my revision timetable for the upcoming month.",neutral,Daily Routine,False
+"I killed that mock interview today! The interviewer said my problem solving approach was top notch.",joy_optimism,Positive Achievements,True
+"My parents compared my CGPA to my cousin who scored 9.8. I am so tired of this toxic comparison.",anger,Family & Academic Pressure,False
+"I have three back-to-back lab vivas tomorrow and haven't started preparing for the second one.",anxiety_fear,Academic Pressure & Deadlines,False
+"Nobody noticed that I was absent from college for four straight days. I am invisible.",sadness,Social Isolation,False
+"Completed the cloud computing certification exam on my first attempt!",joy_optimism,Positive Achievements,False
+"My computer crashed in the middle of writing my 20-page seminar report without saving.",anger,Academic Pressure & Deadlines,False
+"Walking across the campus green in the evening breeze helped clear my cluttered thoughts.",joy_optimism,Wellness & Balance,False
+"Everything feels heavy and meaningless lately. I struggle to find any excitement in things I used to love.",sadness,Depressive Lethargy,False
+"I have an exam in two hours and my stomach is in knots. I can barely keep water down.",anxiety_fear,Academic Pressure & Deadlines,False
+"Packed my bags for the weekend trip home after completing the mid-semester evaluations.",neutral,Daily Routine,False
+"Managing college attendance while dealing with chronic back pain from studying is exhausting.",stress_overwhelm,Wellness & Balance,False
+"Our professor complimented our natural language processing project during lab demonstration today.",joy_optimism,Positive Achievements,False
+"I feel paralyzed whenever I sit down to study. The backlog of topics is just too massive.",anxiety_fear,Academic Pressure & Deadlines,False
+"I feel discarded by my old friend group after we got assigned to different section batches.",sadness,Social Isolation,False
+"Why does the hostel warden enforce a 7 PM curfew on female students when male students have no curfew?",anger,Campus Policy,False
+"Helped my classmate debug their segmentation fault error in C++. Felt good to solve it together.",joy_optimism,Social Support & Leisure,False
+"Just printed my hall ticket and checked the examination seat allotment notice.",neutral,Daily Routine,False
+"I'm so stressed about my family's financial situation that I can't focus during classes.",anxiety_fear,Financial & Academic Burden,False
+"I have lost over five kilograms this semester because I forget to eat meals during project sprints.",stress_overwhelm,Sleep & Exhaustion,False
+"Getting eight full hours of restful sleep made me feel like an entirely new person today.",joy_optimism,Sleep & Exhaustion,False
+"The campus placement cell canceled our interview slot with no prior warning or explanation.",anger,Career & Peer Comparison,False
+"I feel like I'm drowning in coursework while pretending to be fine in front of everyone.",sadness,Depressive Lethargy,False
+"I am trembling before this technical interview. Imposter syndrome is at an all-time high.",anxiety_fear,Career & Peer Comparison,False
+"Shared notes with my study group over chai at the college gate.",joy_optimism,Social Support & Leisure,False
+"I spent three hours waiting in line at the scholarship accounts office only to be told to come back Monday.",anger,Campus Infrastructure,False
+"Attended five hours of lecture, had lunch, and finished the tutorial problem set.",neutral,Daily Routine,False
+"I have no energy to socialize, reply to WhatsApp messages, or even step out of my hostel room.",sadness,Social Isolation,False
+"My heart won't stop racing. I feel like something terrible is about to happen even when nothing is wrong.",anxiety_fear,Depressive Lethargy,False
+"I finally deployed our full-stack web application to AWS and the API endpoints are responding in under 50ms!",joy_optimism,Positive Achievements,False
+"I hate having to ask my parents for pocket money when I know they are already struggling financially.",stress_overwhelm,Financial & Academic Burden,False
+"Studied operating system memory management concepts and solved numerical problems on paging.",neutral,Daily Routine,False
+"I'm terrified that I will disappoint everyone who believed in me.",anxiety_fear,Family & Academic Pressure,False
+"The lab air conditioning has been broken for two weeks and it is 38 degrees inside.",anger,Campus Infrastructure,False
+"Went for an evening walk around the football ground with my roommate and talked about our future dreams.",joy_optimism,Social Support & Leisure,False
+"I feel numb. I received my semester grades and I couldn't even bring myself to feel happy or sad.",sadness,Depressive Lethargy,False
+"I have so many assignments due that I haven't showered or stepped outside in two days.",stress_overwhelm,Academic Pressure & Deadlines,False
+"Successfully submitted our paper abstract to the IEEE student conference!",joy_optimism,Positive Achievements,False
+"I have panic attacks every Sunday evening thinking about facing the upcoming college week.",anxiety_fear,Academic Pressure & Deadlines,False
+"My group members submitted plagiarized code and now the entire team is facing academic disciplinary action.",anger,Academic Pressure & Deadlines,False
+"Wrote down my weekly goals in my journal and prioritized high-impact tasks.",neutral,Daily Routine,False
+"I feel like everyone else has their life sorted out with clear career paths, while I am completely lost.",sadness,Career & Peer Comparison,False
+"I drank four cups of black coffee to pull an all-nighter for the compiler design lab exam.",stress_overwhelm,Sleep & Exhaustion,False

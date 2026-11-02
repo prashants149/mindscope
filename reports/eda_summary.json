@@ -1,0 +1,42 @@
+{
+  "dataset_rows": 3000,
+  "depression_prevalence": 0.498,
+  "correlations_with_depression": {
+    "sleep_hours": -0.594,
+    "screen_time_hours": 0.57,
+    "academic_pressure": 0.668,
+    "social_support": -0.476,
+    "financial_stress": 0.553,
+    "anxiety_score": 0.802,
+    "depression_score": 1.0,
+    "attendance_rate": -0.826,
+    "cgpa": -0.8
+  },
+  "sleep_hours": {
+    "overall_mean": 7.44,
+    "non_depressed_mean": 7.86,
+    "depressed_mean": 7.02
+  },
+  "screen_time_hours": {
+    "overall_mean": 5.37,
+    "non_depressed_mean": 4.74,
+    "depressed_mean": 6.0
+  },
+  "academic_pressure": {
+    "overall_mean": 2.48,
+    "non_depressed_mean": 2.01,
+    "depressed_mean": 2.96
+  },
+  "downstream_impacts": {
+    "mean_attendance_non_depressed": 95.78,
+    "mean_attendance_depressed": 88.7,
+    "mean_cgpa_non_depressed": 9.28,
+    "mean_cgpa_depressed": 8.43
+  },
+  "figures_created": [
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_distribution_overview.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_correlation_matrix.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_bivariate_relationships.png",
+    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_downstream_impacts.png"
+  ]
+}

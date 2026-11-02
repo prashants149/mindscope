@@ -1,0 +1,44 @@
+[
+  {
+    "id": "who_adolescent_mental_health",
+    "organization": "World Health Organization (WHO)",
+    "title": "Adolescent Mental Health Fact Sheet",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health",
+    "content": "Globally, one in seven 10-19-year-olds experiences a mental disorder. Depression, anxiety and behavioural disorders are among the leading causes of illness and disability among adolescents. Failure to address adolescent mental health conditions extends to adulthood, impairing both physical and mental health. Protecting adolescents from adversity, promoting socio-emotional learning and psychological well-being, and ensuring access to mental health care are critical for their health and well-being. Lifestyle interventions including consistent sleep schedules (8-10 hours), balanced nutrition, regular physical activity, and strong social networks serve as primary protective factors against psychological distress."
+  },
+  {
+    "id": "who_stress_management_guide",
+    "organization": "World Health Organization (WHO)",
+    "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+    "url": "https://www.who.int/publications/i/item/9789240003927",
+    "content": "Stress is a normal human response to challenging situations. Evidence-based techniques for managing stress include: (1) Grounding yourself: engaging your five senses in your immediate physical environment when overwhelmed by distressing thoughts; (2) Unhooking from difficult thoughts: noticing thoughts and feelings without judgment rather than fighting them; (3) Acting on values: focusing energy on small, actionable steps aligned with personal core values; and (4) Making room: breathing into physical sensations of tension with self-compassion. Academic stress can be mitigated through chunking workloads, deliberate micro-breaks, and progressive muscle relaxation."
+  },
+  {
+    "id": "nimh_college_student_mental_health",
+    "organization": "National Institute of Mental Health (NIMH)",
+    "title": "College Students and Mental Health",
+    "url": "https://www.nimh.nih.gov/health/publications/student-mental-health",
+    "content": "College is a time of transition that brings new academic, social, and financial challenges. It is common for students to feel overwhelmed, anxious, or down at times. However, persistent symptoms lasting more than two weeks that impair daily functioning (such as constant sadness, loss of interest in hobbies, inability to sleep or concentrate) warrant reaching out for professional support. Colleges often provide campus counseling services, peer support groups, and mental health resources. Non-diagnostic self-assessment tools can help students recognize lifestyle imbalances, but definitive evaluations must only be conducted by licensed mental health clinicians."
+  },
+  {
+    "id": "nimh_anxiety_disorders_guidance",
+    "organization": "National Institute of Mental Health (NIMH)",
+    "title": "Anxiety Disorders in Young Adults",
+    "url": "https://www.nimh.nih.gov/health/topics/anxiety-disorders",
+    "content": "Occasional anxiety is an expected part of life, especially before exams, presentations, or major life changes. An anxiety disorder differs from temporary worry in that the anxiety does not go away and can worsen over time. Evidence-backed coping mechanisms include cognitive restructuring (challenging catastrophic interpretations), gradual exposure, mindfulness-based stress reduction (MBSR), and limiting caffeine and recreational stimulants. When anxiety significantly disrupts attendance, academic performance, or interpersonal relationships, evidence-based psychotherapies such as Cognitive Behavioral Therapy (CBT) are highly effective."
+  },
+  {
+    "id": "tele_manas_overview",
+    "organization": "Government of India - MoHFW / NIMHANS",
+    "title": "National Tele Mental Health Programme of India (Tele-MANAS)",
+    "url": "https://telemanas.mohfw.gov.in/",
+    "content": "Tele-MANAS (Tele Mental Health Assistance and Networking Across States) is the Government of India's 24x7 toll-free mental health helpline, launched by the Ministry of Health and Family Welfare with NIMHANS as the nodal coordinating center. Anyone experiencing psychological distress, examination anxiety, relationship stress, depressive feelings, or crisis can call 14416 or 1800-891-4416 to receive immediate, free, confidential counseling from trained clinical psychologists and counselors in regional Indian languages. Tele-MANAS provides basic psychological first aid, tele-counseling, and linkages to district mental health programmes (DMHP) when in-person intervention is required."
+  },
+  {
+    "id": "nimhans_youth_wellbeing_framework",
+    "organization": "National Institute of Mental Health and Neurosciences (NIMHANS)",
+    "title": "Positive Mental Health & Academic Resilience Framework",
+    "url": "https://nimhans.ac.in/",
+    "content": "NIMHANS youth mental health guidelines emphasize a multi-tier framework for university students: (1) Sleep Hygiene: Maintaining regular circadian rhythms and avoiding blue light exposure 60 minutes before bed directly enhances cognitive consolidation and emotional regulation; (2) Social Connectivity: Cultivating meaningful peer relationships buffers academic stressors and reduces feelings of isolation in campus hostels; (3) Academic Boundary Setting: Breaking study sessions into Pomodoro intervals (25-30 minutes) prevents cognitive fatigue and burnout; and (4) Crisis Intervention: Ensuring immediate access to campus mentoring and emergency hotlines (Tele-MANAS 14416 / Emergency 112) for students facing severe emotional distress."
+  }
+]

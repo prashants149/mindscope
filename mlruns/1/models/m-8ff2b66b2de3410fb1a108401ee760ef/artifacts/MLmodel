@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/mrpra/.gemini/antigravity/scratch/mindscope/mlruns/1/models/m-8ff2b66b2de3410fb1a108401ee760ef/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.17.1
+model_id: m-8ff2b66b2de3410fb1a108401ee760ef
+model_size_bytes: 3516654
+model_uuid: m-8ff2b66b2de3410fb1a108401ee760ef
+prompts: null
+run_id: f1fe17cc87b342af80c5df4a35096dfd
+utc_time_created: '2026-10-13 10:12:41.939426'
