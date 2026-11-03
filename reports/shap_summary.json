@@ -418,11 +418,11 @@
     }
   },
   "figures_generated": [
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_summary_beeswarm.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_feature_importance_bar.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_dependence_academic_pressure.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_dependence_sleep_hours.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_local_waterfall_high_risk.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\shap_local_waterfall_low_risk.png"
+    "reports\\figures\\shap_summary_beeswarm.png",
+    "reports\\figures\\shap_feature_importance_bar.png",
+    "reports\\figures\\shap_dependence_academic_pressure.png",
+    "reports\\figures\\shap_dependence_sleep_hours.png",
+    "reports\\figures\\shap_local_waterfall_high_risk.png",
+    "reports\\figures\\shap_local_waterfall_low_risk.png"
   ]
 }

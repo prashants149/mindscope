@@ -74,6 +74,6 @@
   "best_model": {
     "name": "Logistic_Regression",
     "test_roc_auc": 0.9752,
-    "artifact_path": "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\models\\best_depression_classifier.joblib"
+    "artifact_path": "models\\best_depression_classifier.joblib"
   }
 }

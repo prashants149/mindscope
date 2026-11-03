@@ -34,9 +34,9 @@
     "mean_cgpa_depressed": 8.43
   },
   "figures_created": [
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_distribution_overview.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_correlation_matrix.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_bivariate_relationships.png",
-    "C:\\Users\\mrpra\\.gemini\\antigravity\\scratch\\mindscope\\reports\\figures\\eda_downstream_impacts.png"
+    "reports\\figures\\eda_distribution_overview.png",
+    "reports\\figures\\eda_correlation_matrix.png",
+    "reports\\figures\\eda_bivariate_relationships.png",
+    "reports\\figures\\eda_downstream_impacts.png"
   ]
 }

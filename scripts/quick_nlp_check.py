@@ -1,6 +1,8 @@
 import sys, os
+from pathlib import Path
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-sys.path.insert(0, r"C:\Users\mrpra\.gemini\antigravity\scratch\mindscope")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
 print("Importing crisis safeguard...", flush=True)
 from src.nlp.crisis_safeguard import check_crisis_indicators
@@ -23,7 +25,7 @@ import pandas as pd
 from src.nlp.emotion_classifier import YouthEmotionClassifier, EMOTION_CLASSES
 print("OK", flush=True)
 
-df = pd.read_csv(r"C:\Users\mrpra\.gemini\antigravity\scratch\mindscope\data\nlp\youth_narratives.csv")
+df = pd.read_csv(PROJECT_ROOT / "data" / "nlp" / "youth_narratives.csv")
 clf = YouthEmotionClassifier.train_baseline_pipeline(df)
 print("Classifier trained", flush=True)
 
