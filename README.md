@@ -19,6 +19,19 @@
 
 ---
 
+## 🎓 Academic Capstone Project Details
+
+| Field | Details |
+|---|---|
+| **Project Title** | **MindScope: Youth Mental Health XAI System** |
+| **Domain** | Affective Computing, Explainable AI (XAI), & Causal Inference |
+| **Target Cohort** | Youth & College Students (Ages 15–25) |
+| **Tech Stack** | Python 3.13, FastAPI, Scikit-learn, DoWhy, EconML, SHAP, ChromaDB, Next.js 14, TypeScript |
+| **Interview & Thesis Guide** | [MindScope_Project_Interview_Preparation.pdf](MindScope_Project_Interview_Preparation.pdf) |
+| **Comprehensive Thesis Report** | [docs/REPORT.md](docs/REPORT.md) (841 lines) |
+
+---
+
 ## Overview
 
 MindScope is an explainable AI and causal inference research platform investigating the causes and downstream effects of mental health stressors (academic pressure, sleep deprivation, screen time, financial burden, social support) on youth depression, anxiety, attendance rates, and CGPA across ages 15–25.
